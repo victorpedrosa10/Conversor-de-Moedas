@@ -30,15 +30,16 @@ function convertValues() {
         currency: "BRL"
     }).format(inputCurrencyValue)
 
-    console.log(convertedValue)
 
     
 }
 
-// function changeCurrency() {
-//     console.log('trocou a moeda')
-// }
-// currencySelect.addEventListener("change", changeCurrency())
+const seletor = document.querySelector("#seletor-moedas")
+
+function change() {
+    console.log('trocou a moeda')
+}
+seletor.addEventListener("change", change);
 
 convertButton.addEventListener("click", convertValues)
 
