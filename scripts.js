@@ -29,15 +29,26 @@ function convertValues() {
         style: "currency",
         currency: "BRL"
     }).format(inputCurrencyValue)
-
-
     
 }
 
 const seletor = document.querySelector("#seletor-moedas")
 
 function change() {
-    console.log('trocou a moeda')
+    const currencyname = document.getElementById("currency-name")
+    const currencyImage = document.querySelector(".currency-img")
+
+    if(seletor.value == "dolar") {
+        currencyname.innerHTML = "Dolar Americano"
+        currencyImage.src = "./assets/estados-unidos (1) 1usa.png"
+    }
+
+    if(seletor.value == "euro") {
+        currencyname.innerHTML = "Euro"
+        currencyImage.src = "./assets/Design sem nome 3euro.png"
+    }
+
+    convertValues()
 }
 seletor.addEventListener("change", change);
 
