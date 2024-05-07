@@ -1,11 +1,12 @@
 const convertButton = document.querySelector(".convert-button")
-
+const decurrencyselect = document.querySelector(".de-currency-select")
+const currencySelect = document.querySelector(".currency-select")
 
 function convertValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert")
     const currencyValueConverted = document.querySelector(".currency-value")
-    const currencySelect = document.querySelector(".currency-select")
+    
     console.log(currencySelect.value)
 
 
@@ -13,6 +14,12 @@ function convertValues() {
     const euroToday = 6.00
     const libraToday = 6.36
     const bitcoinToday = 323500.00
+    const dolartoreal = 0.20
+    const dolartoeuro = 0.93
+    const dolartolibra = 0.80
+    const dolartobitcoin = 0.000016
+    
+    if(decurrencyselect.value == "dereal") {
 
     if (currencySelect.value == "dolar") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -52,6 +59,53 @@ function convertValues() {
         style: "currency",
         currency: "BRL"
     }).format(inputCurrencyValue)
+
+}
+
+    if(decurrencyselect.value == "dedolar") {
+
+    if (currencySelect.value == "dolar") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD"
+        }).format(inputCurrencyValue)
+    }
+    if (currencySelect.value == "euro") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+            style: "currency",
+            currency: "EUR"
+        }).format(inputCurrencyValue / dolartoeuro)
+    }
+
+    if (currencySelect.value == "libra") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
+            style: "currency",
+            currency: "GBP"
+        }).format(inputCurrencyValue / dolartolibra)
+    }
+
+    if (currencySelect.value == "bitcoin") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "BTC"
+        }).format(inputCurrencyValue / dolartobitcoin)
+    }
+
+    if (currencySelect.value == "real") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        }).format(inputCurrencyValue / dolartoreal)
+    }
+
+    currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    }).format(inputCurrencyValue)
+
+}
+
+
 
 }
 
