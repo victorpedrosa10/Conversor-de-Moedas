@@ -91,3 +91,24 @@ section{
     font-weight: 700;
     font-size: 20px;
 }
+
+@media(max-width: 900px) {
+    .logo{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    label{ 
+        font-size: 20px; 
+    }
+
+    button{
+        font-size: 24px; 
+    }
+
+    .currency-value, .currency-value-to-convert{
+        font-size: 22px;
+    }
+}
