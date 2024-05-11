@@ -8,6 +8,8 @@
 
 ## Sobre o Projeto
 
+- Deploy: <a href="https://victorpedrosa10.github.io/Conversor-de-Moedas/">   Aqui </a>. 
+
 Essa aplicação faz parte de um projeto do curso MBA FullStak do DevClub.
 
 Este projeto é um conversor de moedas desenvolvido utilizando HTML, CSS e JavaScript. O objetivo principal é fornecer uma ferramenta simples e eficiente para converter valores entre diferentes moedas, incluindo Real, Dólar, Euro, Libras e Bitcoin.
@@ -62,9 +64,9 @@ Sem contar com as aulas liberadas constantemente como potencializador do seu apr
 🎓 Engenheiro de Produção - Fortaleza CE <br>
 💻 Estudante FullStack: DevClub <br>
 👩🏻‍💻 Empreendedor <br>
-📚 Buscando melhorar sempre <br> 
-🥊 Fã de lutas  <br> 
-🏅 Fã de Esportes  <br>
+📚 Sempre na Melhoria Contínua <br> 
+🥊 Fã de MuayThai  <br> 
+🏅 Fã de Futebol e Beach Tenis  <br>
 
 <div align="center" >
 <a href="https://www.linkedin.com/in/victorpedrosasouza/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="26"/></a>
